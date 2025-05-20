@@ -5779,8 +5779,9 @@ textarea.form-control {
 }
 .widget-plan .plan__price {
   line-height: 1;
-  font-size: 50px;
+  font-size: 25px;
   color: #435BA1;
+  padding-bottom: 10px;
 }
 .widget-plan .plan__price .period {
   font-size: 14px;
