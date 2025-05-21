@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <i class="icon-location"></i><a href="https://maps.app.goo.gl/7StUN1Bw1AnGEM627">56-04 cavalier tower dr Bender layout opp to decathlon kothanur bengaluru 560077</a>
                   </li>
                   <li>
-                    <i class="icon-clock"></i><a href="contact-us.html">Mon - Sun: 24 X 7</a>
+                    <i class="icon-clock"></i><a href="contact-us.html">Moon - Sun: 24 X 7</a>
                   </li>
                 </ul>
                 <div class="d-flex">
