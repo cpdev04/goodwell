@@ -1295,8 +1295,12 @@ h6 {
 }
 
 .page-title-layout5 {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.ml-custom{
+margin-left: 0px;
 }
 
 .page-title-layout6 .testimonials__rating .overall__rate {

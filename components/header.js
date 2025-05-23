@@ -61,15 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="col-12 col-md-4">
                       <li class="nav__item"><a href="orthopedic.html" class="nav__item-link">Orthopedics</a></li>
-                      <li class="nav__item"><a href="#" class="nav__item-link">Dermatology</a></li>
-                      <li class="nav__item"><a href="#" class="nav__item-link">Plastic Surgery</a></li>
-                      <li class="nav__item"><a href="#" class="nav__item-link">Anesthesiology</a></li>
+                      <li class="nav__item"><a href="dermatology.html" class="nav__item-link">Dermatology</a></li>
+                      <li class="nav__item"><a href="plastic-surgery.html" class="nav__item-link">Plastic Surgery</a></li>
+                      <li class="nav__item"><a href="anesthesiology.html" class="nav__item-link">Anesthesiology</a></li>
                       <li class="nav__item"><a href="#" class="nav__item-link">Urology</a></li>
                     </div>
                     <div class="col-12 col-md-4">
-                      <li class="nav__item"><a href="#" class="nav__item-link">Pulmonology</a></li>
+                      <li class="nav__item"><a href="pulmonology.html" class="nav__item-link">Pulmonology</a></li>
                       <li class="nav__item"><a href="#" class="nav__item-link">Laproscopic Surgery</a></li>
-                      <li class="nav__item"><a href="#" class="nav__item-link">Neuro Surgery</a></li>
+                      <li class="nav__item"><a href="neurology.html" class="nav__item-link">Medical Neurology</a></li>
+                      <li class="nav__item"><a href="neuro-surgery.html" class="nav__item-link">Neuro Surgery</a></li>
                       <li class="nav__item"><a href="#" class="nav__item-link">Sports Medicine</a></li>
                     </div>
                   </div>

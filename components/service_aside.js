@@ -5,18 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h5 class="widget__title">Medical Services</h5>
                 <div class="widget-content">
                   <ul class="list-unstyled mb-0">
-                    <li><a href="#"><span>ENT</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Pediatric & Neonatology<</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Internal Medicine</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Cardiology</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Orthopedics</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Dermatology</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Plastic Surgery</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Anesthesiology</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="ent.html"><span>ENT</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="pediatric.html"><span>Pediatric & Neonatology</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="internal-medicine.html"><span>Internal Medicine</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="cardiology.html"><span>Cardiology</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="orthopedic.html"><span>Orthopedics</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="dermatology.html"><span>Dermatology</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="plastic-surgery.html"><span>Plastic Surgery</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="anesthesiology.html"><span>Anesthesiology</span><i class="icon-arrow-right"></i></a></li>
                     <li><a href="#"><span>Urology</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Pulmonology</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="pulmonology.html"><span>Pulmonology</span><i class="icon-arrow-right"></i></a></li>
                     <li><a href="#"><span>Laproscopic Surgery</span><i class="icon-arrow-right"></i></a></li>
-                    <li><a href="#"><span>Neuro Surger</span><i class="icon-arrow-right"></i></a></li>
+                    <li><a href="pulmonology.html"><span>Neuro Surger</span><i class="icon-arrow-right"></i></a></li>
                     <li><a href="#"><span>Sports Medicine</span><i class="icon-arrow-right"></i></a></li>
                   </ul>
                 </div><!-- /.widget-content -->
