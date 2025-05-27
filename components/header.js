@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="gallery.html" class=" nav__item-link ">Gallery</a>
               </li>
               <li class="nav__item has-dropdown">
-                <a href="blog.php" class=" nav__item-link ">Blog</a>
+                <a href="#" class=" nav__item-link ">Blog</a>
               </li>
               </li><!-- /.nav-item -->
               <li class="nav__item">
