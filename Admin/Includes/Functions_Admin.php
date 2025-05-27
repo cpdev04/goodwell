@@ -527,7 +527,7 @@ if (isset($_POST['AddPost'])) {
                     if (move_uploaded_file($FileTmp, $Dstn)) {
 
                         // Insert Image Path to Database
-                        $ImagePath = 'http://' . $_SERVER["HTTP_HOST"] . '/Admin/' . $Dstn;
+                        $ImagePath = 'http://' . $_SERVER["HTTP_HOST"] . '/goodwell_final/Admin/' . $Dstn;
 
                         $Query = "INSERT INTO blog_post (Post_Tag,Page_Title, Post_Title, Post_Feature_Image, Post_Content, Posted_By, Post_Date, Post_Slug,MetaTitle,MetaDesc,MetaKey) 
                                   VALUES ('$PostTag', '$pageTitle', '$PostTitle', '$ImagePath', '$PostContent', '" . $_COOKIE['LoggedInID'] . "', '$cust_date', '$PostSlug','$MetaTitle','$MetaDesc','$MetaKey')";
@@ -681,7 +681,7 @@ function EditPost()
                             $FileNewName = uniqid() . '.' . $FileExt;
                             $Dstn = "plugins/images/BlogImages/" . $FileNewName;
                             if (move_uploaded_file($FileTmp, $Dstn)) {
-                                $ImagePath = 'http://' . $_SERVER["HTTP_HOST"] . '/Admin/' . $Dstn;
+                                $ImagePath = 'http://' . $_SERVER["HTTP_HOST"] . '/goodwell_final/Admin/' . $Dstn;
                             } else {
                                 $ImagePath = $ExistingFeatureImage; // Keep existing if upload fails
                             }

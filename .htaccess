@@ -1,0 +1,69 @@
+#Enable Rewrite Engine
+RewriteEngine On
+
+# Ensure the base directory is correctly set
+RewriteBase /goodwell_final/
+
+# ==========================
+# Redirect index or index.php to domain root
+# ==========================
+RewriteCond %{THE_REQUEST} /index(?:\.php)? [NC]
+RewriteRule ^index(?:\.php)?$ / [L,R=301]
+
+# Add a special case for Admin directory
+RewriteRule ^Admin/?$ Admin/Login.php [L]
+
+# ==============================
+# Redirect /Blog/slug to Post.php?slug=slug
+# (Fixing your blog URLs)
+# ==============================
+RewriteRule ^Blog/([^/]+)/?$ Post.php?slug=$1 [L,QSA]
+
+# Redirect /post/Tags.php to /Tags.php
+RewriteRule ^Blog/Tags\.php$ Tags.php [L,R=301]
+
+# ==============================
+# Handle Services with clean URLs
+# ==============================
+
+# Main services/specialities page
+RewriteRule ^services/?$ services.php [L]
+
+# Individual service/speciality pages
+RewriteRule ^services/([^/]+)/?$ $1.php [L]
+
+# ==============================
+# Handle Doctors with clean URLs
+# ==============================
+
+# Main doctors page
+RewriteRule ^team/?$ team.php [L]
+
+# Individual doctor pages
+RewriteRule ^team/([^/]+)/?$ $1.php [L]
+
+# ==============================
+# Remove .php and .html extensions
+# ==============================
+
+# IMPORTANT: Exclude Admin directory from URL rewrites
+RewriteCond %{REQUEST_URI} !Admin/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# Redirect URLs with .php to clean URLs (but not for Admin)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]+)\.php [NC]
+RewriteCond %{REQUEST_URI} !Admin/ [NC]
+RewriteRule ^ /%1 [L,R=301]
+
+# Remove .html extension (but not for Admin)
+RewriteCond %{REQUEST_URI} !Admin/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Redirect URLs with .html to clean URLs (but not for Admin)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]+)\.html [NC]
+RewriteCond %{REQUEST_URI} !Admin/ [NC]
+RewriteRule ^ /%1 [L,R=301]

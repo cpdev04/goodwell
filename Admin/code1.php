@@ -1,6 +1,6 @@
 <script src="https://kit.fontawesome.com/0b170b98a9.js" crossorigin="anonymous"></script>
 <?php 
-$conn = new mysqli("localhost", "blog_user", "blog@post09876", "srisai_db");
+$conn = new mysqli("localhost", "root", "", "goodwell");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

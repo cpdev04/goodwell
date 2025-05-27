@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$conn = new mysqli("localhost", "blog_user", "blog@post09876", "srisai_db");
+$conn = new mysqli("localhost", "root", "", "goodwell");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

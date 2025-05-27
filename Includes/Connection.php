@@ -1,9 +1,9 @@
 <?php 
 // Databse Variables
 $Host       ='localhost';
-$DBUser     ='blog_user';
-$DBPass     ='blog@post09876';
-$DB         ='srisai_db';
+$DBUser     ='root';
+$DBPass     ='';
+$DB         ='goodwell';
 
 
 //Create Connection
