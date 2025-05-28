@@ -127,7 +127,7 @@
                     </div><!-- /.navbar-collapse -->
                     <div class="d-none d-xl-flex align-items-center position-relative ml-30">
                         <!-- /.miniPopup-departments -->
-                        <a href="contact-us.html#bookAppointment" class="btn btn__primary btn__rounded ml-30">
+                        <a href="appointment.html" class="btn btn__primary btn__rounded ml-30">
                             <i class="icon-calendar"></i>
                             <span style="white-space: nowrap;">Book Appointment</span>
                         </a>

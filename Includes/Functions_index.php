@@ -145,7 +145,7 @@ function DisplayPostsIndex() {
                 <div class="w3-row">
                     <div class="w3-col m8 s12">
                         <p>
-                            <a href="/Blog-Post/' . $PostSlug . '"><button class="w3-button w3-padding-large w3-white w3-border cust-btn"><b>READ MORE »</b></button></a>
+                            <a href="/Blog/' . $PostSlug . '"><button class="w3-button w3-padding-large w3-white w3-border cust-btn"><b>READ MORE »</b></button></a>
                         </p>
                         
                     </div>
@@ -218,7 +218,7 @@ function DisplayPostsTag($TagID) {
                 <div class="w3-row">
                     <div class="w3-col m8 s12">
                           <p>
-                            <a href="Blog/' . $PostSlug . '"><button class="w3-button w3-padding-large w3-white w3-border cust-btn"><b>READ MORE »</b></button></a>
+                            <a href="/Blog/' . $PostSlug . '"><button class="w3-button w3-padding-large w3-white w3-border cust-btn"><b>READ MORE »</b></button></a>
                         </p>
                     </div>
                     <div class="w3-col m4 w3-hide-small">
