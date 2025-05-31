@@ -78,7 +78,7 @@ function Tags() {
         while ($Row = $Result->fetch_assoc()) {
             $Tags  = $Row['Tag'];
             $TagID = $Row['Tag_ID'];
-            echo '<a href="../Tags.php?Tag=' . $TagID . '"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">' . $Tags . '</span></a> ';
+            echo '<a href="/goodwell_final/Tags.php?Tag=' . $TagID . '"><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">' . $Tags . '</span></a> ';
         }
     }
 }
@@ -145,7 +145,7 @@ function DisplayPostsIndex() {
                 <div class="w3-row">
                     <div class="w3-col m8 s12">
                         <p>
-                            <a href="/Blog/' . $PostSlug . '"><button class="w3-button w3-padding-large w3-white w3-border cust-btn"><b>READ MORE »</b></button></a>
+                            <a href="Blog/' . $PostSlug . '"><button class="w3-button w3-padding-large w3-white w3-border cust-btn"><b>READ MORE »</b></button></a>
                         </p>
                         
                     </div>
@@ -218,7 +218,7 @@ function DisplayPostsTag($TagID) {
                 <div class="w3-row">
                     <div class="w3-col m8 s12">
                           <p>
-                            <a href="/Blog/' . $PostSlug . '"><button class="w3-button w3-padding-large w3-white w3-border cust-btn"><b>READ MORE »</b></button></a>
+                            <a href="Blog/' . $PostSlug . '"><button class="w3-button w3-padding-large w3-white w3-border cust-btn"><b>READ MORE »</b></button></a>
                         </p>
                     </div>
                     <div class="w3-col m4 w3-hide-small">

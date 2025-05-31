@@ -33,14 +33,14 @@ $Query1 = "SELECT * FROM blog_post WHERE Post_ID = '$PostID'";
 $Result1 = $Connection->query($Query1);
 
 if ($Result1->num_rows > 0) {
-    while($row = $Result1->fetch_assoc()) {
-        $PageTitle=$row['Page_Title'];
-        $PostTitle=$row['Post_Title'];
-      // Meta
-        $MetaTitle=$row['MetaTitle'];
+    while ($row = $Result1->fetch_assoc()) {
+        $PageTitle = $row['Page_Title'];
+        $PostTitle = $row['Post_Title'];
+        // Meta
+        $MetaTitle = $row['MetaTitle'];
         $MetaDesc = $row['MetaDesc'];
         $MetaKey = $row['MetaKey'];
-      //   Meta
+        //   Meta
     }
 }
 
@@ -57,272 +57,162 @@ if ($Result && $Result->num_rows > 0) {
 <html lang="en">
 
 <head>
-     <title><?php echo htmlspecialchars_decode($PageTitle ); ?></title>
-     <link href="../css/bootstrap.min.css" rel="stylesheet">
-     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	
-    <!-- meta -->
-	<meta name="keywords" content="<?php echo $MetaKey?>">
-    <meta name="description" content="<?php echo $MetaDesc?>">
-    <meta name="title" content="<?php echo $MetaTitle?>">
-    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
+    <link href="assets/images/favicon/favicon.png" rel="icon">
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/service_aside.js" defer></script>
+    <title>Good Well Hospital</title>
 
-	<link rel="icon" type="image/png" href="../images/favicon-32x32.png">
-
-	<!--main file-->
-	<link href="../css/medical-guide.css" rel="stylesheet" type="text/css">
-
-	<!--Medical Guide Icons-->
-	<link href="../fonts/medical-guide-icons.css" rel="stylesheet" type="text/css">
-
-	<!-- Default Color-->
-	<link href="../css/default-color.css" rel="stylesheet" id="color" type="text/css">
-
-	<!--bootstrap-->
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-
-	<!--Dropmenu-->
-	<link href="../css/dropmenu.css" rel="stylesheet" type="text/css">
-
-	<!--Sticky Header-->
-	<link href="../css/sticky-header.css" rel="stylesheet" type="text/css">
-
-	<!--revolution-->
-	<link href="../css/style.css" rel="stylesheet" type="text/css">
-	<link href="../css/settings.css" rel="stylesheet" type="text/css">
-	<link href="../css/extralayers.css" rel="stylesheet" type="text/css">
-
-	<!--Accordion-->
-	<link href="../css/accordion.css" rel="stylesheet" type="text/css">
-
-	<!--tabs-->
-	<link href="../css/tabs.css" rel="stylesheet" type="text/css">
-
-	<!--Owl Carousel-->
-	<link href="../css/owl.carousel.css" rel="stylesheet" type="text/css">
-
-	<!--FancyBox-->
-	<link rel="stylesheet" type="text/css" href="../css/jquery.fancybox.css">
-
-	<!-- Mobile Menu -->
-	<link rel="stylesheet" type="text/css" href="../css/jquery.mmenu.all.css" />
-	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
-
-	<!--PreLoader-->
-	<link href="../css/loader.css" rel="stylesheet" type="text/css">
-	<!-- fontaswome  -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	 <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        
-         .cust-font{
-            font-family: 'Raleway', sans-serif;
-        }
-        
-    </style>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="../assets/css/libraries.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets_blog/style.css">
 </head>
 
 <body>
-<div id="wrap">    
-    <!--Start Top Bar-->
- <div class="top-bar">
-     <div class="container">
-         <div class="row">
+    <div id="wrap">
 
-             <div class="col-md-5">
-                 <span>best hospital in nagawara Bengaluru.</span>
-             </div>
+        <!--End Banner-->
+         <header class="header header-layout2">
+            <div class="header-topbar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
+                                    <li>
+                                        <i class="icon-phone"></i><a href="tel:+917829224666">Emergency Line: +917829224666</a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-location"></i><a href="https://maps.app.goo.gl/7StUN1Bw1AnGEM627">56-04 cavalier tower dr Bender layout opp to decathlon kothanur bengaluru 560077</a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-clock"></i><a href="contact-us.html">Moon - Sun: 24 X 7</a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex">
+                                    <ul class="social-icons list-unstyled mb-0 mr-30">
+                                        <li><a href="https://www.facebook.com/profile.php?id=61575672526904"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/goodwell_hospital/"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://x.com/Goodwell_112">X</a></li>
+                                        <li><a href="https://in.pinterest.com/digigoodwellhospital/"><i class="fab fa-pinterest"></i></a>
+                                        </li>
+                                    </ul><!-- /.social-icons -->
 
-             <div class="col-md-7">
-                 <div class="get-touch">
+                                </div>
+                            </div>
+                        </div><!-- /.col-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.header-top -->
+            <nav class="navbar navbar-expand-lg sticky-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../assets/images/logo/goodwell_logo.jpeg" class="logo-dark logo-w" alt="goodwell logo">
+                    </a>
+                    <button class="navbar-toggler" type="button">
+                        <span class="menu-lines"><span></span></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavigation" style="flex:none">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav__item">
+                                <a href="../home-modern.html" class=" nav__item-link">Home</a>
+                            </li>
+                            <li class="nav__item ">
+                                <a href="../about-us.html" class=" nav__item-link">About Us</a>
+                            </li>
+                            <li class="nav__item has-dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Services</a>
+                                <ul class="dropdown-menu p-3" style="min-width: 600px;">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <li class="nav__item"><a href="../obstetrics-gynecology.html" class="nav__item-link">Obstetrics & Gynecology</a></li>
+                                            <li class="nav__item"><a href="../ent.html" class="nav__item-link">ENT</a></li>
+                                            <li class="nav__item"><a href="../pediatric.html" class="nav__item-link">Pediatric & Neonatology</a></li>
+                                            <li class="nav__item"><a href="../internal-medicine.html" class="nav__item-link">Internal Medicine</a></li>
+                                            <li class="nav__item"><a href="../cardiology.html" class="nav__item-link">Cardiology</a></li>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <li class="nav__item"><a href="../orthopedic.html" class="nav__item-link">Orthopedics</a></li>
+                                            <li class="nav__item"><a href="../dermatology.html" class="nav__item-link">Dermatology</a></li>
+                                            <li class="nav__item"><a href="../plastic-surgery.html" class="nav__item-link">Plastic Surgery</a></li>
+                                            <li class="nav__item"><a href="../anesthesiology.html" class="nav__item-link">Anesthesiology</a></li>
+                                            <li class="nav__item"><a href="#" class="nav__item-link">Urology</a></li>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <li class="nav__item"><a href="../pulmonology.html" class="nav__item-link">Pulmonology</a></li>
+                                            <li class="nav__item"><a href="#" class="nav__item-link">Laproscopic Surgery</a></li>
+                                            <li class="nav__item"><a href="../neurology.html" class="nav__item-link">Medical Neurology</a></li>
+                                            <li class="nav__item"><a href="../neuro-surgery.html" class="nav__item-link">Neuro Surgery</a></li>
+                                            <li class="nav__item"><a href="#" class="nav__item-link">Sports Medicine</a></li>
+                                        </div>
+                                    </div>
+                                </ul>
 
-                     <ul>
-                         <li><a href="tel:+91 1800 889 4318"><i class="icon-phone4"></i>1800 889 4318</a></li>
-                         <li><a href="mailto:srisaihospital2006@gmail.com"><i
-                                     class="icon-mail"></i>srisaihospital2006@gmail.com</a></li>
-                     </ul>
+                            </li>
+                            <li class="nav__item has-dropdown">
+                                <a href="../doctors-grid.html" class=" nav__item-link ">Team</a>
+                            </li>
 
-                     <ul class="social-icons">
-                         <li><a href="https://www.facebook.com/profile.php?id=61555921273141" class="fb"><i
-                                     class="icon-euro"></i> </a></li>
-                         <li><a href="https://www.instagram.com/sri_sai_hospital/" class="tw"><i
-                                     class="fa fa-instagram"></i> </a></li>
-                         <li><a href="https://www.linkedin.com/company/sri-sai-hospital-healthcare/about/?viewAsMember=true"
-                                 class="gp"><i class="fa fa-linkedin"></i> </a></li>
-                         <li><a href=" https://www.google.com/maps/place/SRI+SAI+HOSPITAL/@13.0370306,77.6238849,15z/data=!4m6!3m5!1s0x3bae176cb7096387:0xaa0e4ed7818054b7!8m2!3d13.0370306!4d77.6238849!16s%2Fg%2F1tv3m3n0?entry=ttu"
-                                 class="gp"><i class="icon-caddieshoppingstreamline"></i> </a></li>
-                         <li><a href="https://www.youtube.com/@SriSaiHospitals" class="tw"><i
-                                 class="fa fa-youtube"></i> </a></li>
-                     </ul>
+                            <li class="nav__item has-dropdown">
+                                <a href="../gallery.html" class=" nav__item-link ">Gallery</a>
+                            </li>
+                            <li class="nav__item has-dropdown">
+                                <a href="../blog.php" class=" nav__item-link ">Blog</a>
+                            </li>
+                            </li><!-- /.nav-item -->
+                            <li class="nav__item">
+                                <a href="../contact-us.html" class="nav__item-link">Contacts</a>
+                            </li><!-- /.nav-item -->
+                        </ul><!-- /.navbar-nav -->
+                        <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
+                    </div><!-- /.navbar-collapse -->
+                    <div class="d-none d-xl-flex align-items-center position-relative ml-30">
+                        <!-- /.miniPopup-departments -->
+                        <a href="../appointment.html" class="btn btn__primary btn__rounded ml-30">
+                            <i class="icon-calendar"></i>
+                            <span style="white-space: nowrap;">Book Appointment</span>
+                        </a>
+                    </div>
+                </div><!-- /.container -->
+            </nav><!-- /.navabr -->
+        </header>
+    <!-- /.Header -->
+    
+    <!-- ========================
+       page title 
+    =========================== -->
+       <!-- BREADCRUM -->
+    <section class="page-title page-title-layout5 text-center bg-img" style="background-image: url(../assets/images/backgrounds/6.jpg); background-size: cover; background-position: center center;">
+      
+      <div class="container  ml-custom">
+        <div class="row">
+          <div class="col-12">
+            <nav class="nav-breadcrum">
+              <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                <li class="breadcrumb-item active" aria-current="page">
+                 <?php echo $PostTitle ?>
 
-                 </div>
-             </div>
+                </li>
+              </ol>
+            </nav>
+            <h1 class="pagetitle__heading">
+              Blog
 
-         </div>
-     </div>
- </div>
- <!--Top Bar End-->
-
-
- <!--Start Header-->
- <header class="header">
-     <div class="container">
-
-
-         <div class="row">
-
-             <div class="col-md-3">
-                 <a href="../index.php" class="logo"><img src="../images/logo1.png" alt=""></a>
-             </div>
-
-             <div class="col-md-9">
-
-
-                 <?php
-                // Get the current file name without the directory path
-                $current_page = basename($_SERVER['PHP_SELF']);
-                ?>
-
-                 <nav class="menu-2">
-                     <ul class="nav wtf-menu">
-                         <li class="<?php echo ($current_page == '../index.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="../index.php">Home</a>
-                         </li>
-                         <li class="<?php echo ($current_page == 'about-us.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="../about-us.php">About Us</a>
-                         </li>
-                         <li class="<?php echo ($current_page == 'services.php' || $current_page == 'orthopaedic.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="../services.php">Services</a>
-                         </li>
-                         <li class="<?php echo ($current_page == 'slimming_weight_loss.php' || $current_page == 'dermocosmetic.php' || $current_page == 'hair_loss_transplant.php' || $current_page == 'cosmetic_surgery.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="">Category</a>
-                             <ul class="submenu">
-                                <li><a href="../slimming_weight_loss.php">Slimming & Weight Loss</a></li>
-                                <li><a href="../dermocosmetic.php">Dermocosmetic Services</a></li>
-                                <li><a href="../hair_loss_transplant.php">Hair Loss & Transplant</a></li>
-                                <li><a href="../cosmetic_surgery.php">Cosmetic Surgery</a></li>
-                            </ul>
-                         </li>
-                         <li class="<?php echo ($current_page == 'gallery.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="../gallery.php">Gallery</a>
-                         </li>
-                         <li
-                             class="<?php echo ($current_page == 'team-members.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="../team-members.php">Doctors</a>
-                         </li>
-                         <li
-                             class="<?php echo ($current_page == 'contact-us.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="../contact-us.php">Contact Us</a>
-                         </li>
-                         <li
-                             class="<?php echo ($current_page == 'blog.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="../blog.php">Blogs</a>
-                         </li>
-                         <li class="<?php echo ($current_page == 'Clinic.php') ? 'item-select parent' : 'parent'; ?>">
-                             <a href="../Clinic.php">Clinic</a>
-                         </li>
-                     </ul>
-                 </nav>
-
-
-             </div>
-
-         </div>
-
-
-     </div>
- </header>
- <!--End Header-->
-
-
- <!-- Mobile Menu Start -->
- <div class="container">
-     <div id="page">
-         <header class="header">
-             <a href="#menu"></a>
-
-         </header>
-
-         <nav id="menu">
-             <ul>
-                 <li class="select"><a href="../index.php">Home</a>
-                 </li>
-                 <li><a href="../about-us.php">About us</a>
-                 </li>
-                 <li><a href="../services.php">service</a>
-                 </li>
-
-                 <li><a href="../gallery.php">Gallery</a>
-                 </li>
-
-                 <li><a href="../team-members.php">Doctors</a>
-                 </li>
-
-                 <li><a href="../contact-us.php">Contact Us</a>
-                 </li>
-                 <li><a href="../blog.php">Blogs</a>
-                 </li>
-                 <li><a href="../Clinic.php">clinic</a>
-                 </li>
-
-             </ul>
-
-
-         </nav>
-     </div>
- </div>
- <!-- Mobile Menu End -->
-
-
- <div class="container">
-     <div class="time-table-sec">
-         <ul id="accordion2" class="accordion2">
-             <li>
-                 <ul class="submenu time-table">
-                     <li class="tit">
-                         <h5>Working Time</h5>
-                     </li>
-                     <li><span class="day">Monday - sunday</span> <span class="divider">-</span> <span
-                             class="time">24HR</span></li>
-                 </ul>
-                 <div class="link"><img class="time-tab" src="../images/timetable-menu-orange.png" alt=""></div>
-
-             </li>
-         </ul>
-     </div>
- </div>
-
-    <!--Start Banner-->
-
-		<div class="sub-banner">
-
-<img class="banner-img" src="../images/Banner/galary.jpg" alt="">
-<div class="detail">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-
-            <div class="paging">
-               <h2>Blog</h2>
-               <ul>
-                  <li><a href="../index.php">Home</a></li>
-                  <li><a href="../blog.php">Blog</a></li>
-                  <li><a><?php  echo $PostTitle ?></a></li>
-               </ul>
-            </div>
-
-         </div>
-      </div>
-   </div>
-</div>
-
-</div>
-
-<!--End Banner-->
+            </h1>
+          </div><!-- /.col-xl-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+    <!-- BREADCRUM -->
 
         <!-- start post-body -->
         <div class="w3-row">
@@ -352,7 +242,7 @@ if ($Result && $Result->num_rows > 0) {
                             </div>
                             <input name="PostId" value="<?php echo $PostID ?>" type="hidden">
                             <div style="margin-left:10px;margin-top:20px">
-                                <button style="background-color:#FF7C5B;color:white;padding:15px 40px" name="AddComment"
+                                <button style="background-color:#1B5762;color:white;padding:15px 40px" name="AddComment"
                                     type="submit" class="w3-button w3-white w3-border"><b>Comment</b></button>
                             </div>
                         </div>
@@ -389,234 +279,137 @@ if ($Result && $Result->num_rows > 0) {
 
 
     </div><!-- /.page-wrapper -->
-</body>
- <!-- Footer area start -->
- <!--Start Footer-->
-<footer class="footer" id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="emergency">
-                            <i class="icon-phone5"></i>
-                            <span class="text">For emergency cases</span>
-                            <a href="tel:+91 1800 889 4318"><span class="number">1800 889 4318</span></a>
-                            <img src="images/emergency-divider.png" alt="">
-                        </div>
+
+<!-- ========================Footer
+    ========================== -->
+    <footer class="footer">
+      <div class="footer-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3">
+              <div class="footer-widget-about">
+                <img src="../assets/images/logo/goodwell_logo.jpeg" alt="logo" class="mb-30">
+                <p class="color-gray">Our goal is to deliver quality of care in a courteous, respectful, and
+                  compassionate manner. We hope you will allow us to care for you and strive to be the first and best
+                  choice for your family healthcare.
+                </p>
+
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-xl-2 -->
+            <div class="col-sm-6 col-md-6 col-lg-2 offset-lg-1">
+              <div class="footer-widget-nav">
+                <h6 class="footer-widget__title">Departments</h6>
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Obstetrics & Gynecology</a></li>
+                    <li><a href="#">Orthopedics</a></li>
+                    <li><a href="#">Pulmonology</a></li>
+                    <li><a href="#">ENT</a></li>
+                    <li><a href="#">Dermatology</a></li>
+                    <li><a href="#">Laproscopic Surgery</a></li>
+                    <li><a href="#">Pediatric & Neonatology</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-6 col-md-6 col-lg-2">
+              <div class="footer-widget-nav">
+                <h6 class="footer-widget__title">Quick Links</h6>
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="home-modern.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="doctors-grid.html">Team</a></li>
+                    <li><a href="contact-us.html">Contacts</a></li>
+                    <li><a href="#">Blogs</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="footer-widget-contact" style="padding: 32px 9px">
+                <h6 class="footer-widget__title color-heading">Quick Contacts</h6>
+                <ul class="contact-list list-unstyled">
+                  <li>If you have any questions or need help, feel free to contact with our team.</li>
+                  <li>
+                    <div style="display: flex;gap: 10px;">
+                      <div><a href="tel:6364444988 " class="phone__number">
+                          <i class="icon-phone"></i> <span>6364444988 </span>
+                        </a></div>
+                      <div>
+                        <a href="tel:9008049699 " class="phone__number">
+                          <i class="icon-phone"></i> <span>9008049699 </span>
+                        </a>
+                      </div>
                     </div>
-                </div>
-
-
-                <div class="main-footer">
-                    <div class="row">
-
-                        <div class="col-md-3">
-
-                            <div class="useful-links">
-                                <div class="title">
-                                    <h5>ABOUT US</h5>
-                                </div>
-
-                                <div class="detail">
-                                    <div class="signup-text">
-                                        <i class=""></i>
-                                        <span style="color: white;font-size:14px">Sri Sai Hospital, founded in 2006 by
-                                            Dr. Shyamala Thyagaraj and D M Thyagaraj
-                                            in Nagawara, has emerged as a beacon of hope, offering accessible,
-                                            affordable,
-                                            and high-quality healthcare with advanced medical technology.</span>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <h5>
-                                        <p>&nbsp;</p>
-                                    </h5>
-                                </div>
-                                <div class="">
-                                    <img src="images/logofooter.png" style="width: 190px;" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-md-3">
-
-                            <div class="useful-links">
-                                <div class="title">
-                                    <h5>Medical guide</h5>
-                                </div>
-
-                                <div class="detail">
-                                    <ul>
-                                        <li><a href="../index.php">Home</a></li>
-                                        <li><a href="../about-us.php">About Us</a></li>
-                                        <li><a href="../services.php">Services</a></li>
-                                        <li><a href="../gallery.php">Gallery</a></li>
-                                        <li><a href="../team-members.php">Specilaties</a></li>
-                                        <li><a href="../contact-us.php">Contact Us</a></li>
-                                         <li><a href="../blog.php">blogs</a></li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-3">
-
-                            <div class="get-touch">
-                                <div class="title">
-                                    <h5>GET IN TOUCH</h5>
-                                </div>
-
-                                <div class="detail">
-                                    <div class="get-touch">
-
-
-                                        <span class="text">For inquiries or appointments, contact Sri Sai Hospital
-                                            today.</span>
-
-
-                                        <ul>
-                                            <li><a href="https://maps.app.goo.gl/p7etrEEZANdLQCV67"><i
-                                                        class="icon-location"></i> <span>14th, Door no-978, 18th Cross,
-                                                        main, Nagawara Main Rd, 5th Block, HBR Layout, Bengaluru,
-                                                        Karnataka
-                                                        560045</span></a></li>
-                                            <li><a href="tel:+91 080 46883299"><i class="icon-phone4"></i> <span>080
-                                                        46883299</span></a></li>
-                                            <li><a href="mailto:srisaihospital2006@gmail.com"><i
-                                                        class="icon-dollar"></i>
-                                                    <span>srisaihospital2006@gmail.com</span></a></li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-3">
-
-
-                            <div class="title">
-                                <h5>GET DIRECTION</h5>
-                            </div>
-
-                            <div class="detail">
-
-                                <div class="tweets">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9786550921194!2d77.62130997484257!3d13.037030587284336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176cb7096387%3A0xaa0e4ed7818054b7!2sSRI%20SAI%20HOSPITAL!5e0!3m2!1sen!2sin!4v1707712674886!5m2!1sen!2sin"
-                                        width="270" height="240" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-
-                            </div>
-
-
-
-                        </div>
-
+                    </li>
+                  <li>
+                    <div style="display: flex;gap: 10px">
+                      <div><a href="tel:08029727745 " class="phone__number">
+                          <i class="icon-phone"></i> <span>08029727745 </span>
+                        </a></div>
+                      <div>
+                        <a href="tel:08029727746 " class="phone__number">
+                          <i class="icon-phone"></i> <span>08029727746 </span>
+                        </a>
+                      </div>
                     </div>
-
+                    </li>
+                    
+                    <li>
+                    <a href="mailto:goodwellhospital2025@gmail.com" class="phone__number">
+                      <i class="fas fa-envelope"></i> <span>goodwellhospital2025 <br> @gmail.com</span>
+                    </a>
+                  </li>
+                  <li class="color-body">56-04 cavalier tower dr Bender layout opp to decathlon kothanur bengaluru 560077</li>
+                </ul>
+                <div class="d-flex align-items-center">
+                  <a href="https://maps.app.goo.gl/7StUN1Bw1AnGEM627" class="btn btn__primary btn__link mr-30">
+                    <i class="icon-arrow-right"></i> <span class="text-nowrap">Get Direction</span>
+                  </a>
+                  <ul class="social-icons list-unstyled mb-0">
+                    <li><a href="https://x.com/Goodwell_112">X</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61575672526904"><i
+                          class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/goodwell_hospital/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://in.pinterest.com/digigoodwellhospital/"><i class="fab fa-pinterest"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul><!-- /.social-icons -->
                 </div>
+              </div><!-- /.footer-widget__content -->
+            </div><!-- /.col-lg-2 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-primary -->
+      <div class="footer-secondary">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <span class="fz-14">Copyright 2025 - Goodwell Hospital All Right Reserved</span>
 
-            </div>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <nav>
+                <ul class="list-unstyled footer__copyright-links d-flex flex-wrap justify-content-end mb-0">
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
 
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-6">
-                            <span class="copyrights">Copyright &copy; 2024 Sri Sai Hospital. All right reserved.</span>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com/profile.php?id=61555921273141" class="fb"><i
-                                        class="icon-euro"></i></a>
-                                <a href=" https://www.google.com/maps/place/SRI+SAI+HOSPITAL/@13.0370306,77.6238849,15z/data=!4m6!3m5!1s0x3bae176cb7096387:0xaa0e4ed7818054b7!8m2!3d13.0370306!4d77.6238849!16s%2Fg%2F1tv3m3n0?entry=ttu" class="icon-caddieshoppingstreamline"></a>
-                                <a href="https://www.instagram.com/sri_sai_hospital" class="gp"><i
-                                        class="fa fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/company/sri-sai-hospital-healthcare/about/?viewAsMember=true"
-                                    class="vimeo"><i class="fa fa-linkedin"></i></a>
-                                 <a href="https://www.youtube.com/@SriSaiHospitals" class="tw"><i
-                                 class="fa fa-youtube"></i> </a></li>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <a class="back-to-top" href="#."></a>
-
-            </div>
-
-        </footer>
-        <!--End Footer-->
+                </ul>
+              </nav>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-secondary -->
+    </footer>
+    <!-- /.Footer -->
+<!-- Footer area start -->
 
 
-        <a href="#0" class="cd-top"></a>
 
-<script type="text/javascript" src="../js/jquery.js"></script>
-
-<!-- SMOOTH SCROLL -->
-<script type="text/javascript" src="../js/scroll-desktop.js"></script>
-<script type="text/javascript" src="../js/scroll-desktop-smooth.js"></script>
-
-<!-- START REVOLUTION SLIDER -->
-<script type="text/javascript" src="../js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="../js/jquery.themepunch.tools.min.js"></script>
-
-
-<!-- Date Picker and input hover -->
-<script type="text/javascript" src="../js/classie.js"></script>
-<script type="text/javascript" src="../js/jquery-ui-1.10.3.custom.js"></script>
-
-
-<!-- Date Picker and input hover -->
-<script type="text/javascript" src="../js/jquery.fancybox.js"></script>
-<script type="text/javascript" src="../js/jquery.fancybox-media.js"></script>
-
-
-<!-- Welcome Tabs -->
-<script type="text/javascript" src="../js/tabs.js"></script>
-
-
-<!-- All Carousel -->
-<script type="text/javascript" src="../js/owl.carousel.js"></script>
-
-<!-- Mobile Menu -->
-<script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
-
-<!-- All Scripts -->
-<script type="text/javascript" src="../js/custom.js"></script>
-
-<script>
-   <!-- Fancybox -->
-   /*
-             *  Simple image gallery. Uses default settings
-             */
-
-   $('.fancybox').fancybox();
-
-   /*
-    *  Different effects
-    */
-
-   $(document).ready(function () {
-      $('.fancybox-media').fancybox({
-         openEffect: 'none',
-         closeEffect: 'none',
-         helpers: {
-            media: {}
-         }
-      });
-   });
-</script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

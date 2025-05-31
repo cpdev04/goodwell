@@ -1,3 +1,24 @@
+<?php
+$page = "Tags.php";
+include("Admin/code2.php");
+include("Includes/Connection.php");
+include("Includes/Functions_index.php");
+
+// Update Website Stat
+$Query = "UPDATE total_visits SET Total_Visits=Total_Visits+1";
+$Result = $Connection->query($Query);
+
+if (isset($_GET['PostID'])) {
+  $PostID = $_GET['PostID'];
+  GetTitle($PostID);
+}
+
+if (isset($_GET['Tag'])) {
+    $TagID = $_GET['Tag'];
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,32 +28,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
   <link href="assets/images/favicon/favicon.png" rel="icon">
-  <script src="components/header.js" defer></script>
-  <script src="components/footer.js" defer></script>
-  <script src="components/service_aside.js" defer></script>
   <title>Good Well Hospital</title>
-
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets_blog/style.css">
-  
-
+  <style>
+    .fab{
+      padding-top: 4px;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="preloader">
-      <div class="loading"><span></span><span></span><span></span><span></span></div>
-    </div>
-    <!-- /.preloader -->
 
-    <!-- =========================
-        Header
-    =========================== -->
-    <header class="header header-layout2">
+
+  <div id="wrap">
+
+        <!--End Banner-->
+         <header class="header header-layout2">
             <div class="header-topbar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
@@ -137,13 +153,13 @@
             </nav><!-- /.navabr -->
         </header>
     <!-- /.Header -->
-
+    
     <!-- ========================
        page title 
     =========================== -->
-    <!-- BREADCRUM -->
-    <section class="page-title page-title-layout5 text-center">
-      <div class="bg-img"><img src="assets/images/backgrounds/6.jpg" alt="background"></div>
+       <!-- BREADCRUM -->
+    <section class="page-title page-title-layout5 text-center bg-img" style="background-image: url(assets/images/backgrounds/6.jpg); background-size: cover; background-position: center center;">
+      
       <div class="container  ml-custom">
         <div class="row">
           <div class="col-12">
@@ -152,12 +168,12 @@
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Blog</li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Explore Our Blogs
+                  <?php TagByID($TagID); ?>
 
                 </li>
               </ol>
             </nav>
-                        <h1 class="pagetitle__heading">
+            <h1 class="pagetitle__heading">
               Blog
 
             </h1>
@@ -166,30 +182,21 @@
       </div><!-- /.container -->
     </section>
     <!-- BREADCRUM -->
+          
 
-
-
-    <!-- /.page-title -->
-     
-        <!--End Banner-->
-        <div class="page-wrapper">
-
-
-            <!-- <div class="container"> -->
-            <?php
-            include("Includes/Header.php");
-            include("Includes/Body.php");
-
-            ?>
-            <!-- </div> -->
-
-
-
+        <!-- start post-body -->
+        <div class="w3-row">
+             <?php
+    include  'Includes/TagsBody.php';
+    ?>
         </div>
+        <!-- end post-body -->
 
+        
 
-    <!-- ========================
-      Footer
+    </div><!-- /.page-wrapper -->
+
+<!-- ========================Footer
     ========================== -->
     <footer class="footer">
       <div class="footer-primary">
@@ -312,13 +319,7 @@
       </div><!-- /.footer-secondary -->
     </footer>
     <!-- /.Footer -->
-     
- 
-  </div><!-- /.wrapper -->
-
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/main.js"></script>
+<!-- Footer area start -->
 </body>
 
 </html>

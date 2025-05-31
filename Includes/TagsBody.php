@@ -9,36 +9,13 @@ if (isset($_GET['Tag'])) {
 ?>
 <!--Start Banner-->
 
-<div class="sub-banner">
 
-<img class="banner-img" src="images/Banner/galary.jpg" alt="">
-<div class="detail">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-
-                <div class="paging">
-                    <h2>Blog</h2>
-                    <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a>Blog</a></li>
-                        <li> <?php TagByID($TagID); ?> </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
 
 <!--End Banner-->
 
       
 
         <!-- <div class="container"> 
-        <!-- Grid -->
         <div class="w3-row">
 
             <!-- Blog entries -->
@@ -83,19 +60,6 @@ if (isset($_GET['Tag'])) {
 
     </div><!-- /.page-wrapper -->
 
-        <!-- main-js -->
-    <script src="assets/js/script.js"></script>
-     <!-- JS here -->
-   <script src="assets/js/jquery-3.6.0.min.js"></script>
-   <script src="assets/js/waypoints.min.js"></script>
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-   <script src="assets/js/meanmenu.min.js"></script>
-   <script src="assets/js/swiper.min.js"></script>
-   <script src="assets/js/slick.min.js"></script>
-   <script src="assets/js/magnific-popup.min.js"></script>
-   <script src="assets/js/counterup.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/beforeafter.jquery-1.0.0.min.js"></script>
-   <script src="assets/js/main.js"></script>
+
 
         
